@@ -57,16 +57,34 @@ body {
 .small-box-wrapper .box {
   width: calc((100% / 3) - 2em);
 }
-.small-box-wrapper{
-    flex-wrap: wrap;
-    justify-content: space-around;
+.small-box-wrapper {
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.bigger-box-wrapper{
-    width: calc(50% - 2em);
+.bigger-box-wrapper {
+  width: calc(50% - 2em);
 }
-.small-wrapper{
-    width: calc(50% - 2em);
+.small-wrapper {
+  width: calc(50% - 2em);
 }
-.small-wrapper .box{
-    width: calc(100% - 2em);
+.small-wrapper .box {
+  width: calc(100% - 2em);
+}
+@media (max-width: 425px) {
+  .bigger-box {
+    width: 50px;
+    height: 50px;
+    margin: 0.5em 0.5em;
+  }
+  .bigger-box-wrapper {
+    height: 91px;
+  }
+  .box {
+    width: 25px;
+    height: 25px;
+    margin: 0.5em 0.5em;
+  }
+  .small-wrapper .box {
+    width: calc(100% - 1em);
+  }
 }
